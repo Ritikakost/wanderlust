@@ -8,8 +8,8 @@ const ListingSchema = Joi.object({
         location: Joi.string().required(),
         country: Joi.string().required(),
         category: Joi.string().valid(
-            'Trending', 'Room', 'Iconic Cities', 'Mountains', 'Castles',
-            'Amazing Pools', 'Camping Farms', 'Arctic Domes', 'Boats'
+            'Trending', 'Room', 'Iconic_Cities', 'Mountains', 'Castles',
+            'Amazing_Pools', 'Camping', 'Farms', 'Arctic',' Domes', 'Boats'
         ).required() // Include category with valid options and required
     }).required()
 });
